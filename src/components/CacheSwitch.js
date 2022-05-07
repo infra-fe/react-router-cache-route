@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  Switch,
+  Switch as OriginalSwitch,
   matchPath,
   withRouter,
   useHistory,
@@ -15,6 +15,11 @@ import { get, isNull, isExist } from '../helpers'
 
 const isUsingNewContext = isExist(__RouterContext) || isExist(useHistory)
 
+class Empty {
+  
+}
+
+const Switch = OriginalSwitch || Empty
 class CacheSwitch extends Switch {
   getContext = () => {
     if (isUsingNewContext) {

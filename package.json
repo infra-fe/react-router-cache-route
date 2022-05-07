@@ -1,6 +1,6 @@
 {
-  "name": "react-router-cache-route",
-  "version": "1.12.7",
+  "name": "cache-route-with-switch",
+  "version": "1.0.1",
   "description": "cache-route for react-router base on react v15+ and router v4+",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "react router",
     "keep alive route"
   ],
-  "author": "CJY0208",
+  "author": "shudong.li",
   "license": "ISC",
   "homepage": "https://github.com/CJY0208/react-router-cache-route",
   "repository": {
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "mini-create-react-context": "^0.4.1",
-    "react-freeze": "^1.0.0"
+    "react-freeze": "^1.0.0",
+    "user": "0.0.0"
   }
 }
